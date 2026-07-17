@@ -3,6 +3,7 @@
 A responsive landing page for a fictional developer conference, built by converting a Figma/Penpot UI design into a production-ready Bootstrap 5 frontend.
 
 **Live demo:** https://eeeshika.github.io/DevConf2026/
+
 **Design source:** `DevConf2026.fig` / `DevConf2026.penpot` (included in repo)
 
 ---
