@@ -45,6 +45,7 @@ No build step, bundler, or package manager required — everything runs from sta
 ## Author
 
 Eshika Rani Pall
+
 [GitHub](https://github.com/EEEshika) ·
-[LinkedIn](https://linkedin.com/in/eshika-rani-pall-b3486b280) ·
+
 [Portfolio](https://eshikarpall.netlify.app)
