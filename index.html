@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConf 2026</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!------------------------------------------- Navbar -------------------------------------------------------------------->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-xl py-2">
+
+                <a class="navbar-brand" href="">
+                    <img src="./assets/logo.png" alt="DevConf 2026 Logo" height="42">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-lg-auto gap-lg-4 mt-3 mt-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Speakers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Schedule</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Tracks</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Venue</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+
+                    </ul>
+
+
+                    <button class="btn btn-primary btn-brand rounded-3 mt-3 mt-lg-0"
+                        data-bs-toggle="modal" data-bs-target="#registerModal">
+                        Register Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--------------------------------------------------------- Hero Section --------------------------------------------------------->
+    <section class="hero-section d-flex align-items-center text-center">
+
+        <div class="container-xl">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <h1 class="hero-title fw-bold text-white mb-4">
+                        Code.
+                        <em class="fst-italic">Connect.</em>
+                        Create
+                    </h1>
+
+
+                    <p class="hero-description text-white-50 mb-4 mx-auto">
+                        Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026.
+                        Experience three inspiring days of technical talks, hands-on workshops, and meaningful
+                        networking opportunities.
+                    </p>
+
+
+                    <button class="btn btn-lg btn-hero rounded-3 text-white fw-semibold"
+                        data-bs-toggle="modal" data-bs-target="#registerModal">
+                        Register Now
+                    </button>
+
+
+                    <!-- Live countdown to early-bird deadline (Aug 15, 2026) -->
+                    <div id="countdown" class="countdown-timer d-flex justify-content-center gap-3 gap-md-4 mt-5"
+                        data-deadline="2026-08-15T00:00:00">
+
+                        <div class="countdown-block">
+
+                            <span class="countdown-number" data-unit="days">00</span>
+                            <span class="countdown-label">Days</span>
+
+                        </div>
+
+                        <div class="countdown-block">
+
+                            <span class="countdown-number" data-unit="hours">00</span>
+                            <span class="countdown-label">Hours</span>
+
+                        </div>
+
+
+                        <div class="countdown-block">
+
+
+                            <span class="countdown-number" data-unit="minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+
+
+                        </div>
+
+
+                        <div class="countdown-block">
+
+
+                            <span class="countdown-number" data-unit="seconds">00</span>
+                            <span class="countdown-label">Seconds</span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p class="text-white-50 small mt-2 mb-0">until early-bird pricing ends</p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-------------------------------------------------------------------Speakers Section -------------------------------------------->
+    <section class="speakers-section py-5 bg-white">
+
+        <div class="container-xl py-4">
+
+            <h2 class="section-title text-center fw-bold mb-5">
+                Meet the Speakers
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Speaker 1 -->
+                <div class="col-12 col-md-6">
+                    <article class="card speaker-card h-100 border rounded-3 overflow-hidden">
+
+                        <img src="./assets/andrej.png" class="card-img-top" alt="Andrej Karpathy">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge speaker-track mb-2">AI / ML</span>
+
+                            <h3 class="speaker-name h4 fw-bold mb-2">Andrej Karpathy</h3>
+
+                            <p class="speaker-role text-muted mb-0">Pretraining Team, Anthropic</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="col-12 col-md-6">
+
+                    <article class="card speaker-card h-100 border rounded-3 overflow-hidden">
+
+                        <img src="./assets/demis.png" class="card-img-top" alt="Demis Hassabis">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge speaker-track mb-2">Cloud &amp; DevOps</span>
+                            
+                            <h3 class="speaker-name h4 fw-bold mb-2">Demis Hassabis</h3>
+
+                            <p class="speaker-role text-muted mb-0">Co-Founder &amp; CEO, Google DeepMind</p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- Speaker 3 -->
+                <div class="col-12 col-md-6">
+
+                    <article class="card speaker-card h-100 border rounded-3 overflow-hidden">
+
+                        <img src="./assets/gary.png" class="card-img-top" alt="Garry Marcus">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge speaker-track mb-2">Frontend</span>
+
+                            <h3 class="speaker-name h4 fw-bold mb-2">Garry Marcus</h3>
+
+                            <p class="speaker-role text-muted mb-0">Staff Engineer, Vercel</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Speaker 4 -->
+                <div class="col-12 col-md-6">
+
+
+                    <article class="card speaker-card h-100 border rounded-3 overflow-hidden">
+
+                        <img src="./assets/mustafa.png" class="card-img-top" alt="Mustafa Suleyman">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge speaker-track mb-2">Security</span>
+
+                            <h3 class="speaker-name h4 fw-bold mb-2">Mustafa Suleyman</h3>
+
+                            <p class="speaker-role text-muted mb-0">CEO of Microsoft AI</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    
+
+    <!------------------------------------------------------------------ Pricing Section  ---------------------------------------------------------------------------------->
+    <section class="pricing-section py-5 bg-white">
+        
+        <div class="container-xl py-4">
+
+            <h2 class="section-title text-center fw-bold mb-2">
+                Secure Your Spot
+            </h2>
+
+            <p class="text-center text-muted mb-5">
+                Early-bird pricing ends August 15, 2026.
+            </p>
+
+
+
+
+
+
+            <div class="row g-4 align-items-stretch">
+                
+
+                <div class="col-12 col-lg-4">
+
+                    <article class="card pricing-card h-100 border rounded-3 p-4 d-flex flex-column">
+
+                        <span class="plan-name text-muted fw-bold text-uppercase small mb-2">Standard</span>
+
+                        <h3 class="plan-price fw-bold mb-1">$399</h3>
+
+                        <p class="plan-duration text-muted mb-3">per person</p>
+
+                        <hr>
+
+
+                        <ul class="plan-features flex-grow-1">
+                            <li>
+                                Access to all 3 conference days
+                            </li>
+
+                            <li>
+                                48 curated technical talks
+                            </li>
+
+                            <li>
+                                2 workshop sessions
+                            </li>
+
+
+                            <li>
+                                Networking lunch &amp; coffee breaks
+                            </li>
+
+                            <li>
+                                Conference swag bag
+                            </li>
+
+
+                            <li>
+                                Digital recordings (30 days)
+                            </li>
+
+                        </ul>
+
+
+
+
+
+                        <button class="btn pricing-btn outline-btn w-100 mt-3">Get Standard</button>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Pro (featured) -->
+                <div class="col-12 col-lg-4">
+
+                    <article class="card pricing-card featured-plan h-100 border-0 rounded-3 p-4 d-flex flex-column text-white">
+
+                        <span class="plan-name fw-bold text-uppercase small mb-2">Pro</span>
+
+                        <h3 class="plan-price fw-bold mb-1">$749</h3>
+
+                        <p class="plan-duration mb-3">per person</p>
+
+                        <hr>
+
+                        <ul class="plan-features flex-grow-1">
+                            <li>
+                                Everything in Standard
+                            </li>
+
+                            <li>
+                                Unlimited workshop access
+                            </li>
+
+
+                            <li>
+                                Speaker meet &amp; greet
+                            </li>
+
+
+                            <li>
+                                VIP networking dinner
+                            </li>
+
+
+                            <li>
+                                Lifetime recording access
+                            </li>
+
+                            <li>
+                                1-on-1 mentorship (30 min)
+                            
+                            </li>
+                        </ul>
+                        <button class="btn pricing-btn filled-btn w-100 mt-3">Get Pro</button>
+
+
+                    </article>
+
+
+                </div>
+
+                <!-- Team -->
+                <div class="col-12 col-lg-4">
+                    <article class="card pricing-card h-100 border rounded-3 p-4 d-flex flex-column">
+
+                        <span class="plan-name text-muted fw-bold text-uppercase small mb-2">Team</span>
+
+                        <h3 class="plan-price fw-bold mb-1">$5,999</h3>
+
+                        <p class="plan-duration text-muted mb-3">up to 10 people</p>
+
+                        <hr>
+
+                        <ul class="plan-features flex-grow-1">
+
+                            <li>
+                                Everything in Pro (10 seats)
+                            </li>
+
+
+                            <li>
+                                Dedicated team lounge access
+                            </li>
+
+                            <li>
+                                Private workshop booking
+                            </li>
+
+                            <li>
+                                Company logo on event page
+                            </li>
+
+                            <li>
+                                Recruitment booth (1 day)
+                            </li>
+
+                            <li>
+                                Priority customer support
+                            </li>
+
+
+                        </ul>
+
+                        <button class="btn pricing-btn outline-btn w-100 mt-3">Contact Us</button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-----------------------------------------------------------------Career Section------------------------------------------------>
+    <section class="career-section py-5">
+
+        <div class="container-xl py-4">
+
+            <h2 class="section-title text-center fw-bold mb-2">
+                Launch Your Tech Career
+            </h2>
+
+            <p class="career-subtitle text-center text-muted mx-auto mb-5">
+                Meet top technology companies recruiting talented engineers directly at DevConf 2026.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card career-card h-100 border rounded-3 p-4 d-flex flex-column">
+
+                        <h3 class="h4 mb-2">Google</h3>
+                        
+                        <span class="career-role fw-semibold mb-3">Software Engineer</span>
+
+                        <p class="career-location text-muted mb-2">📍 Mountain View, California</p>
+
+                        <p class="career-type text-muted mb-2">💼 Full Time</p>
+
+                        <p class="career-description">Build cloud applications and distributed systems used by billions of users worldwide.</p>
+
+
+                        <div class="career-tags d-flex flex-wrap gap-2 mb-4">
+
+                            <span class="badge career-tag">Go</span>
+
+                            <span class="badge career-tag">Kubernetes</span>
+
+                            <span class="badge career-tag">Cloud</span>
+
+                        </div>
+
+
+                        <button class="btn career-btn w-100 mt-auto">
+                            Apply Now
+                        
+                        </button>
+
+
+                    </article>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card career-card h-100 border rounded-3 p-4 d-flex flex-column">
+
+                        <h3 class="h4 mb-2">Microsoft</h3>
+
+                        <span class="career-role fw-semibold mb-3">AI Engineer</span>
+
+                        <p class="career-location text-muted mb-2">📍 Redmond, Washington</p>
+
+                        <p class="career-type text-muted mb-2">💼 Full Time</p>
+
+                        <p class="career-description">Design intelligent AI solutions and large language model applications.</p>
+                        <div class="career-tags d-flex flex-wrap gap-2 mb-4">
+
+                            <span class="badge career-tag">Python</span>
+
+                            <span class="badge career-tag">Azure</span>
+
+                            <span class="badge career-tag">AI</span>
+
+                        </div>
+
+                        <button class="btn career-btn w-100 mt-auto">Apply Now</button>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card career-card h-100 border rounded-3 p-4 d-flex flex-column">
+
+                        <h3 class="h4 mb-2">Vercel</h3>
+
+                        <span class="career-role fw-semibold mb-3">Frontend Developer</span>
+
+                        <p class="career-location text-muted mb-2">📍 Remote</p>
+
+                        <p class="career-type text-muted mb-2">💼 Full Time</p>
+
+                        <p class="career-description">Create fast and accessible web experiences for developers around the world.</p>
+                        <div class="career-tags d-flex flex-wrap gap-2 mb-4">
+
+                            <span class="badge career-tag">React</span>
+
+                            <span class="badge career-tag">Next.js</span>
+
+                            <span class="badge career-tag">TypeScript</span>
+
+                        </div>
+
+                        <button class="btn career-btn w-100 mt-auto">
+                            Apply Now
+                        </button>
+
+
+                    </article>
+
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card career-card h-100 border rounded-3 p-4 d-flex flex-column">
+
+                        <h3 class="h4 mb-2">Cloudflare</h3>
+
+                        <span class="career-role fw-semibold mb-3">Security Engineer</span>
+
+                        <p class="career-location text-muted mb-2">📍 Austin, Texas</p>
+
+                        <p class="career-type text-muted mb-2">💼 Hybrid</p>
+
+                        <p class="career-description">Protect internet infrastructure with modern networking and cybersecurity solutions.</p>
+                        <div class="career-tags d-flex flex-wrap gap-2 mb-4">
+
+                            <span class="badge career-tag">Security</span>
+
+                            <span class="badge career-tag">Networking</span>
+
+                            <span class="badge career-tag">Linux</span>
+
+                        </div>
+
+                        <button class="btn career-btn w-100 mt-auto">Apply Now</button>
+
+                    </article>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!------------------------------------------------ Footer -------------------------------------------------------->
+    <footer class="site-footer py-5">
+
+        <div class="container-xl">
+
+
+            <div class="footer-top d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+                <img src="./assets/footer-logo.png" alt="DevConf 2026" class="footer-logo" height="36">
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-3 pt-3">
+                <p class="mb-0">© 2026 DevConf. All rights reserved.</p>
+
+
+                <ul class="footer-links d-flex list-unstyled gap-4 mb-0">
+
+                    <li>
+                        <a href="">
+                            Privacy Policy</a>
+                    </li>
+
+
+                    <li>
+                        <a href="">Terms of Service</a>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+            
+
+        </div>
+
+
+    </footer>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header border-0">
+
+                    <h5 class="modal-title fw-bold" id="registerModalLabel">Register for DevConf 2026</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="registerForm" novalidate>
+
+                        <div class="mb-3">
+
+
+                            <label for="regName" class="form-label">
+                                Full name
+                            </label>
+
+
+                            <input type="text" class="form-control" id="regName" required minlength="2">
+
+                            <div class="invalid-feedback">Please enter your name.</div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="regEmail" class="form-label">Email address</label>
+
+                            <input type="email" class="form-control" id="regEmail" required>
+
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="regPlan" class="form-label">Ticket plan</label>
+
+                            <select class="form-select" id="regPlan" required>
+
+                                <option value="">Choose a plan…</option>
+
+                                <option value="standard">Standard — $399</option>
+
+                                <option value="pro">Pro — $749</option>
+
+                                <option value="team">Team — $5,999</option>
+
+
+
+
+                            </select>
+                            <div class="invalid-feedback">Please select a plan.</div>
+
+                        </div>
+
+
+                        <div id="registerAlert" class="alert d-none" role="alert"></div>
+
+
+                        <button type="submit" class="btn btn-brand w-100" id="registerSubmitBtn">
+
+
+                            <span id="registerSubmitText">Confirm Registration</span>
+
+                            <span id="registerSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                        </button>
+
+
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
