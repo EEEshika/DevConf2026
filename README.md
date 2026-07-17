@@ -2,7 +2,7 @@
 
 A responsive landing page for a fictional developer conference, built by converting a Figma/Penpot UI design into a production-ready Bootstrap 5 frontend.
 
-**Live demo:** _add your deployed link here_
+**Live demo:** https://eeeshika.github.io/DevConf2026/
 **Design source:** `DevConf2026.fig` / `DevConf2026.penpot` (included in repo)
 
 ---
@@ -40,25 +40,10 @@ No build step, bundler, or package manager required — everything runs from sta
 └── DevConf2026.penpot   # Original Penpot design file
 ```
 
-## Running Locally
-
-No installation needed — it's a static site.
-
-1. Clone or download this repository
-2. Open `index.html` directly in a browser, **or** serve it locally for the best experience with `fetch()` calls:
-   ```bash
-   npx serve .
-   # or
-   python3 -m http.server 8000
-   ```
-3. Visit `http://localhost:8000` (or the port shown)
-
-## Notes
-
-- The registration form posts to a mock endpoint ([JSONPlaceholder](https://jsonplaceholder.typicode.com/)) to demonstrate a real REST API call — swap the URL in `script.js` for a production registrations endpoint before going live.
-- The countdown deadline is configurable via the `data-deadline` attribute on the `#countdown` element in `index.html`.
 
 ## Author
 
 Eshika Rani Pall
-[GitHub](https://github.com/EEEshika) · [LinkedIn](https://linkedin.com/in/eshika-rani-pall-b3486b280) · [Portfolio](https://eshikarpall.netlify.app)
+[GitHub](https://github.com/EEEshika) ·
+[LinkedIn](https://linkedin.com/in/eshika-rani-pall-b3486b280) ·
+[Portfolio](https://eshikarpall.netlify.app)
